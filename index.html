@@ -3,12 +3,50 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Recursos de la web</title>
+    <title>Mis utilidades</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js'></script>
 </head>
 <body>
-    Mis recursos de la web
+    Comprobar bd:
+
+    DBCC CHECKDB(‘Base de datos’)
+    
+    Si se ha de reparar debemos pasarla a único usuario:
+    
+    ALTER DATABASE Base de datos  SET SINGLE_USER
+    
+    Hay tres niveles de reparación. Según el mensaje de error  a veces nos dice cuál debemos ejecutar de las tres:
+    
+    DBCC CHECKDB (‘Base de datos’, REPAIR_FAST)
+    
+    DBCC CHECKDB (‘Base de datos’, REPAIR_REBUILD)
+    
+    DBCC CHECKDB (‘Base de datos’, REPAIR_ALLOW_DATA_LOSS)
+    
+    Una vez ejecutada una de las tres opciones anteriores se ha de volver a comprobar de nuevo. En caso de más errores volveremos a reparar.
+    
+    DBCC CHECKDB(‘Base de datos’)
+    
+    Si la validación nos devuelve OK, y no hay errores de consistencia pasaremos de nuevo a multi-usuario.
+    
+    ALTER DATABASE  Base de datos SET MULTI_USER
+    
+     Por último es aconsejable regenerar índices.
+    
+    USE base_de_datos                                      
+    
+    EXEC SP_MSFOREACHTABLE @COMMAND1="PRINT'?' DBCC DBREINDEX ('?')"
+    
+     Saludos
+    
+    
+    
+    
+    
+    
+    
+    
 </body>
 </html>
