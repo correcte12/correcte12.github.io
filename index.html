@@ -1,52 +1,96 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Mis utilidades</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
-</head>
-<body>
-    Comprobar bd:
+<html lang="es">
 
-    DBCC CHECKDB(‘Base de datos’)
-    
-    Si se ha de reparar debemos pasarla a único usuario:
-    
-    ALTER DATABASE Base de datos  SET SINGLE_USER
-    
-    Hay tres niveles de reparación. Según el mensaje de error  a veces nos dice cuál debemos ejecutar de las tres:
-    
-    DBCC CHECKDB (‘Base de datos’, REPAIR_FAST)
-    
-    DBCC CHECKDB (‘Base de datos’, REPAIR_REBUILD)
-    
-    DBCC CHECKDB (‘Base de datos’, REPAIR_ALLOW_DATA_LOSS)
-    
-    Una vez ejecutada una de las tres opciones anteriores se ha de volver a comprobar de nuevo. En caso de más errores volveremos a reparar.
-    
-    DBCC CHECKDB(‘Base de datos’)
-    
-    Si la validación nos devuelve OK, y no hay errores de consistencia pasaremos de nuevo a multi-usuario.
-    
-    ALTER DATABASE  Base de datos SET MULTI_USER
-    
-     Por último es aconsejable regenerar índices.
-    
-    USE base_de_datos                                      
-    
-    EXEC SP_MSFOREACHTABLE @COMMAND1="PRINT'?' DBCC DBREINDEX ('?')"
-    
-     Saludos
-    
-    
-    
-    
-    
-    
-    
-    
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="recursos, web, ayuda, mis recursos">
+  <meta name="author" content="@correcte12">
+
+  <title>Mis recursos</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/simple-sidebar.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+    <div class="bg-light border-right" id="sidebar-wrapper">
+      <div class="sidebar-heading">Los recursos de correcte12</div>
+      <div class="list-group list-group-flush">
+        <a href="grafics.html" class="list-group-item list-group-item-action bg-light">Gráficos e imágenes</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">Overview</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">Events</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">Profile</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">Status</a>
+      </div>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+        <button class="btn btn-primary" id="menu-toggle">Menú</button>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="container-fluid">
+        <h1 class="mt-4">Mis recursos,  todos juntos en un solo sitio</h1>
+        <p>Este sitio es una declaración de intenciones para </p>
+        <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>. The top navbar is optional, and just for demonstration. Just create an element with the <code>#menu-toggle</code> ID which will toggle the menu when clicked.</p>
+      </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+  </div>
+  <!-- /#wrapper -->
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Menu Toggle Script -->
+  <script>
+    $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+  </script>
+
 </body>
+
 </html>
