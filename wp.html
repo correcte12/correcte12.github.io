@@ -11,13 +11,14 @@
   <title>Mis recursos - Desarrollo web</title>
 
   <!-- Bootstrap core CSS -->
-
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 
   <!--Para la tabla de bootstrap-->
   <link href="https://unpkg.com/bootstrap-table@1.17.1/dist/bootstrap-table.min.css" rel="stylesheet">
 
-  <script src="https://unpkg.com/bootstrap-table@1.17.1/dist/bootstrap-table.min.js"></script>
+  <script src="https://unpkg.com/bootstrap-table@1.17.1/dist/bootstrap-table.js"></script>
   
   
   
@@ -25,7 +26,24 @@
 
     <!-- Custom styles for this template -->
     <link href="css/simple-sidebar.css" rel="stylesheet">
-</head>
+    
+    <style>
+      .left {
+        float: left;
+      }
+      .right {
+        float: right;
+      }
+      .like {
+        margin-right: 10px;
+      }
+      .item {
+        margin-bottom: 20px;
+      }
+      </style>
+
+
+  </head>
 
 <body>
 
@@ -92,7 +110,7 @@
               <tr>
                 <th data-field="github.name"
                   data-formatter="operateFormatter"
-                  data-events="operateEvents">Bookmark 1</th>
+                  data-events="operateEvents">WordPress</th>
               </tr>
             </thead>
           </table>
@@ -101,12 +119,12 @@
         <div class="item">
           <table
             data-toggle="table"
-            data-url="json/data3.json">
+            data-url="json/data1.json">
             <thead>
               <tr>
                 <th data-field="github.name"
                   data-formatter="operateFormatter"
-                  data-events="operateEvents">Bookmark 2</th>
+                  data-events="operateEvents">Vuejs</th>
               </tr>
             </thead>
           </table>
@@ -115,30 +133,18 @@
         <div class="item">
           <table
             data-toggle="table"
-            data-url="json/data3.json">
+            data-url="json/data2.json">
             <thead>
               <tr>
                 <th data-field="github.name"
                   data-formatter="operateFormatter"
-                  data-events="operateEvents">Bookmark 3</th>
+                  data-events="operateEvents">Quasar framework</th>
               </tr>
             </thead>
           </table>
         </div>
         
-        <div class="item">
-          <table
-            data-toggle="table"
-            data-url="json/data3.json">
-            <thead>
-              <tr>
-                <th data-field="github.name"
-                  data-formatter="operateFormatter"
-                  data-events="operateEvents">Bookmark 4</th>
-              </tr>
-            </thead>
-          </table>
-        </div>
+        
         <!--Final tabla de contenidos-->
       </div>
     </div>
