@@ -33,7 +33,7 @@
         "bootstrap-table": "^1.17.1",
         "jquery": "^3.5.1",
         "kind-of": "^6.0.3",
-        "lodash": "^4.17.15",
+        "lodash": "^4.17.20",
         "mixin-deep": "^2.0.1",
         "set-value": "^3.0.2"
     },
