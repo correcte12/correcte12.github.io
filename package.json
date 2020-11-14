@@ -5,7 +5,7 @@
     "scripts": {
         "start": "node_modules/.bin/gulp watch"
     },
-    "description": "A simple sidbar navigation HTMl template built with Bootstrap",
+    "description": "A simple sidebar navigation HTMl template built with Bootstrap",
     "keywords": [
         "css",
         "sass",
