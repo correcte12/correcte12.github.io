@@ -29,19 +29,14 @@
         "url": "https://github.com/BlackrockDigital/startbootstrap-simple-sidebar.git"
     },
     "dependencies": {
-        "bootstrap": "4.3.1",
+        "bootstrap": "^4.6.2",
         "bootstrap-table": "^1.17.1",
-        "jquery": "^3.5.1",
-        "kind-of": "^6.0.3",
-        "lodash": "^4.17.20",
-        "mixin-deep": "^2.0.1",
-        "object-path": "^0.11.5",
-        "set-value": "^3.0.2"
+        "jquery": "^3.7.1"
     },
     "devDependencies": {
-        "browser-sync": "^2.26.13",
+        "browser-sync": "^3.0.4",
         "del": "^4.1.1",
-        "gulp": "4.0.2",
+        "gulp": "^5.0.1",
         "merge-stream": "2.0.0"
     }
 }
