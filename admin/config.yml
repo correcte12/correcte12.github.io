@@ -3,8 +3,7 @@ backend:
   repo: correcte12/correcte12.github.io
   branch: master
   # URL del Cloudflare Worker que hace de proxy OAuth (ver README-admin.md).
-  # Sustituye este valor por la URL real una vez despliegues el Worker.
-  base_url: https://REEMPLAZA-CON-TU-WORKER.workers.dev
+  base_url: https://recursos.correcte12.workers.dev
   auth_endpoint: auth
 
 # Permite probar el panel en local con `npx decap-server` sin necesidad
