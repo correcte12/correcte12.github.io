@@ -1,0 +1,36 @@
+{
+  "slug": "themes",
+  "titulo": "Temas",
+  "descripcion": "Gradientes, colores, generadores CSS y fuentes.",
+  "grupos": [
+    {
+      "titulo": "Gradientes web",
+      "recursos": [
+        { "titulo": "Webgradients", "descripcion": "Colección gratuita de 180 gradientes lineales para fondos. Copia el CSS3 al momento; incluye paquetes para Sketch y Photoshop.", "url": "https://webgradients.com/", "imagen": "webgradients.png" },
+        { "titulo": "Uigradients", "descripcion": "Hermosos degradados de color para diseño y código.", "url": "https://uigradients.com/", "imagen": "uigradients.png" },
+        { "titulo": "Get waves", "descripcion": "Hagamos algunas olas.", "url": "https://getwaves.io", "imagen": "getwaves.png" },
+        { "titulo": "SVG Generator: Wavy Transitions Between Sections", "descripcion": "Genera transiciones onduladas en SVG entre secciones de tu web.", "url": "https://smooth.ie/blogs/news/svg-wavey-transitions-between-sections", "imagen": "smooth.png" }
+      ]
+    },
+    {
+      "titulo": "Generadores de color",
+      "recursos": [
+        { "titulo": "Coolors", "descripcion": "El generador de esquemas de color súper rápido. Crea tu paleta perfecta o inspírate con miles de esquemas.", "url": "https://coolors.co/app", "imagen": "coolors.png" },
+        { "titulo": "Flat ui colors", "descripcion": "Las mejores paletas de colores.", "url": "https://flatuicolors.com/", "imagen": "flatuicolors.png" }
+      ]
+    },
+    {
+      "titulo": "Generador CSS",
+      "recursos": [
+        { "titulo": "Cssmatic", "descripcion": "Las últimas herramientas de CSS para diseñadores web.", "url": "https://www.cssmatic.com/css-tools.html", "imagen": "cssmatic.png" }
+      ]
+    },
+    {
+      "titulo": "Fuentes",
+      "recursos": [
+        { "titulo": "Fuentes de Google", "descripcion": "Pues eso, fuentes de Google.", "url": "https://fonts.google.com/", "imagen": "fontsgoogle.png" },
+        { "titulo": "Bennett feely", "descripcion": "El sitio de Bennett Feely, con herramientas como el generador de clip-path.", "url": "https://bennettfeely.com/clippy/", "imagen": "bennettfeely.png" }
+      ]
+    }
+  ]
+}

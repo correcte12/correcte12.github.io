@@ -1,42 +1,14 @@
 {
-    "title": "Simple Sidebar",
-    "name": "startbootstrap-simple-sidebar",
-    "version": "5.1.1",
+    "name": "correcte12-recursos",
+    "version": "1.0.0",
+    "private": true,
     "scripts": {
-        "start": "node_modules/.bin/gulp watch"
+        "start": "eleventy --serve",
+        "build": "eleventy"
     },
-    "description": "A simple sidebar navigation HTMl template built with Bootstrap",
-    "keywords": [
-        "css",
-        "sass",
-        "html",
-        "responsive",
-        "theme",
-        "template"
-    ],
-    "homepage": "https://startbootstrap.com/template-overviews/simple-sidebar",
-    "bugs": {
-        "url": "https://github.com/BlackrockDigital/startbootstrap-simple-sidebar/issues",
-        "email": "feedback@startbootstrap.com"
-    },
+    "description": "Recursos de correcte12: sitio estático generado con Eleventy a partir de src/_data/recursos, editable desde el panel /admin (Decap CMS).",
     "license": "MIT",
-    "author": "Start Bootstrap",
-    "contributors": [
-        "David Miller (http://davidmiller.io/)"
-    ],
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/BlackrockDigital/startbootstrap-simple-sidebar.git"
-    },
-    "dependencies": {
-        "bootstrap": "^4.6.2",
-        "bootstrap-table": "^1.17.1",
-        "jquery": "^3.7.1"
-    },
     "devDependencies": {
-        "browser-sync": "^3.0.4",
-        "del": "^4.1.1",
-        "gulp": "^5.0.1",
-        "merge-stream": "2.0.0"
+        "@11ty/eleventy": "^3.1.6"
     }
 }

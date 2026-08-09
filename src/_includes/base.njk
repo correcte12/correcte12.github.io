@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ description or 'recursos, web, ayuda, mis recursos' }}">
+  <meta name="author" content="@correcte12">
+  <title>{{ title or "Mis recursos" }}</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <script>
+    (function () {
+      var saved = localStorage.getItem("tema");
+      if (saved) document.documentElement.setAttribute("data-theme", saved);
+    })();
+  </script>
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar" id="sidebar">
+      <a class="sidebar-heading" href="/">Los recursos de correcte12</a>
+      <nav class="sidebar-nav">
+        {% for cat in categoriasList %}
+        <a href="/{{ cat.slug }}.html"{% if cat.slug == slug %} class="active"{% endif %}>{{ cat.titulo }}</a>
+        {% endfor %}
+      </nav>
+    </aside>
+
+    <div class="content">
+      <header class="topbar">
+        <button id="menu-toggle" type="button" aria-label="Abrir u ocultar menú" aria-controls="sidebar">☰</button>
+        <div class="search-wrap">
+          <input type="search" id="buscador" placeholder="Buscar recursos en esta página…" aria-label="Buscar recursos">
+        </div>
+        <button id="theme-toggle" type="button" aria-label="Cambiar tema claro/oscuro">🌓</button>
+      </header>
+      <main class="container">
+        {{ content | safe }}
+      </main>
+      <footer class="site-footer">
+        <a href="/admin/">Panel de administración</a>
+      </footer>
+    </div>
+  </div>
+  <script src="/js/site.js"></script>
+</body>
+</html>

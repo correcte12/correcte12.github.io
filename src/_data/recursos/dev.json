@@ -1,0 +1,55 @@
+{
+  "slug": "dev",
+  "titulo": "Desarrollo web",
+  "descripcion": "Recursos de programación que me han sido útiles.",
+  "enlacePersonal": { "texto": "Mira mi TSA de corbatas", "url": "https://www.corbata.space" },
+  "grupos": [
+    {
+      "titulo": "Editores de código",
+      "recursos": [
+        { "titulo": "Visual Studio Code", "descripcion": "El mejor editor y además gratuito. Cuando Microsoft apuesta por el software libre lo hace muy bien.", "url": "https://code.visualstudio.com/", "imagen": "vscode.png" },
+        { "titulo": "Sublime Text", "descripcion": "Un sofisticado editor de texto para código, marcado y prosa.", "url": "https://www.sublimetext.com/", "imagen": "sublime.png" },
+        { "titulo": "Notepad++", "descripcion": "Editor de código fuente gratuito, reemplazo del Bloc de notas, bajo licencia GPL.", "url": "https://notepad-plus-plus.org/", "imagen": "notepad.png" }
+      ]
+    },
+    {
+      "titulo": "Librerías JavaScript",
+      "recursos": [
+        { "titulo": "Moment js", "descripcion": "Analizar, validar, manipular y mostrar fechas y horas en JavaScript.", "url": "https://momentjs.com/", "imagen": "momentjs.png" },
+        { "titulo": "Hammer js", "descripcion": "Añade gestos táctiles a tu aplicación web.", "url": "https://hammerjs.github.io/", "imagen": "hammer.png" },
+        { "titulo": "Draggable js", "descripcion": "Biblioteca ligera y moderna de arrastrar y soltar.", "url": "https://shopify.github.io/draggable/", "imagen": "draggable.png" },
+        { "titulo": "Axios js", "descripcion": "Cliente HTTP basado en promesas para el navegador y Node.js.", "url": "https://github.com/axios/axios", "imagen": "axios.png" },
+        { "titulo": "Chart js", "descripcion": "Gráficos JavaScript simples pero flexibles para diseñadores y desarrolladores.", "url": "https://www.chartjs.org/docs/latest/", "imagen": "chartjs.png" },
+        { "titulo": "Video js", "descripcion": "El framework de reproductor HTML5 open source más popular del mundo.", "url": "https://videojs.com/", "imagen": "videojs.png" },
+        { "titulo": "Codemirror js", "descripcion": "Editor de texto versátil en JavaScript para el navegador, con modos de lenguaje y plugins avanzados.", "url": "https://codemirror.net/", "imagen": "codemirror.png" },
+        { "titulo": "Immer js", "descripcion": "Crea el siguiente estado inmutable mutando el actual.", "url": "https://immerjs.github.io/immer/", "imagen": "immerjs.png" },
+        { "titulo": "Ramda js", "descripcion": "Práctica biblioteca funcional para programadores de JavaScript.", "url": "https://ramdajs.com/", "imagen": "ramdajs.png" },
+        { "titulo": "Redux js", "descripcion": "Mantenimiento del estado global de la aplicación.", "url": "https://es.redux.js.org/", "imagen": "reduxjs.png" }
+      ]
+    },
+    {
+      "titulo": "Lenguajes y frameworks",
+      "recursos": [
+        { "titulo": "Cssmatic", "descripcion": "Las últimas herramientas de CSS para diseñadores web.", "url": "https://www.cssmatic.com/css-tools.html", "imagen": "cssmatic.png" },
+        { "titulo": "Bootstrap table", "descripcion": "La mejor tabla de Bootstrap, desarrollada por Twitter.", "url": "https://bootstrap-table.com/", "imagen": "bootstrap-table.png" }
+      ]
+    },
+    {
+      "titulo": "Librerías Vue",
+      "recursos": [
+        { "titulo": "Vue drag and drop", "descripcion": "Contenedor ligero que abstrae las partes más extrañas de la API de arrastrar y soltar.", "url": "https://www.npmjs.com/package/vue-drag-drop", "imagen": "vue-drag-drop.jpg" }
+      ]
+    },
+    {
+      "titulo": "Enlaces útiles: autenticación JWT",
+      "recursos": [
+        { "titulo": "Canal de Bluuweb", "descripcion": "Canal de Bluuweb, experto en JavaScript.", "url": "https://www.youtube.com/c/Bluuweb/" },
+        { "titulo": "Web de recursos de Bluuweb", "descripcion": "Web de GitHub con los recursos de Bluuweb.", "url": "https://bluuweb.github.io/" },
+        { "titulo": "Autenticación JWT con Node, Express y Vue", "descripcion": "Vídeo sobre autenticación JWT (recurso de noviembre de 2020).", "url": "https://www.youtube.com/watch?v=KVhf_TE0D78" },
+        { "titulo": "Blog de developerro sobre JWT", "descripcion": "Buen artículo sobre JWT API authentication.", "url": "https://www.developerro.com/2019/03/12/jwt-api-authentication/" },
+        { "titulo": "¿Qué es JSON Web Token y cómo funciona?", "descripcion": "Vídeo corto, claro y conciso sobre JWT.", "url": "https://openwebinars.net/blog/que-es-json-web-token-y-como-funciona/" },
+        { "titulo": "jwt.io", "descripcion": "Comprobador de tokens JWT.", "url": "https://jwt.io/" }
+      ]
+    }
+  ]
+}

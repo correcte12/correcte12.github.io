@@ -1,0 +1,16 @@
+{
+  "slug": "uml",
+  "titulo": "Diagramas UML",
+  "descripcion": "Recursos para crear diagramas UML.",
+  "grupos": [
+    {
+      "titulo": "Diagramas UML",
+      "recursos": [
+        { "titulo": "Diagrams (diagrams.net)", "descripcion": "Diagrama con cualquier persona, en cualquier lugar. Software de diagramación open source, en línea, de escritorio y en contenedor.", "url": "https://app.diagrams.net/", "imagen": "diagrams.png" },
+        { "titulo": "Draw io", "descripcion": "Crea y comparte diagramas profesionales; una de las apps mejor valoradas para Confluence y Jira en Atlassian Marketplace.", "url": "https://drawio-app.com/", "imagen": "draw.png" },
+        { "titulo": "Lucidchart", "descripcion": "Espacio de trabajo visual que combina diagramas, visualización de datos y colaboración.", "url": "https://lucidchart.com", "imagen": "lucidchart.png" },
+        { "titulo": "Visio de Microsoft", "descripcion": "Trabaja de forma visual. Diagramación de forma sencilla.", "url": "https://www.microsoft.com/es-es/microsoft-365/visio/flowchart-software", "imagen": "visio.png" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+---js
+{
+  pagination: {
+    data: "categoriasList",
+    size: 1,
+    alias: "cat"
+  },
+  layout: "base.njk",
+  permalink: (data) => `/${data.cat.slug}.html`,
+  eleventyComputed: {
+    title: (data) => `Mis recursos - ${data.cat.titulo}`,
+    description: (data) => data.cat.descripcion,
+    slug: (data) => data.cat.slug
+  }
+}
+---
+<h1>{{ cat.titulo }}</h1>
+<p class="lead">{{ cat.descripcion }}</p>
+{% if cat.enlacePersonal %}
+<p><a href="{{ cat.enlacePersonal.url }}" target="_blank" rel="noopener">{{ cat.enlacePersonal.texto }}</a></p>
+{% endif %}
+
+{% for grupo in cat.grupos %}
+<section class="grupo">
+  <h2>{{ grupo.titulo }}</h2>
+  <div class="cards">
+    {% for r in grupo.recursos %}
+    <article class="card" data-search="{{ (r.titulo + ' ' + r.descripcion) | lower }}">
+      {% if r.imagen %}<img class="card-img" src="/img/{{ r.imagen }}" alt="" loading="lazy">{% endif %}
+      <div class="card-body">
+        <h3>{{ r.titulo }}</h3>
+        <p>{{ r.descripcion }}</p>
+        <a href="{{ r.url }}" target="_blank" rel="noopener" class="btn">Ir al sitio</a>
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+{% endfor %}

@@ -1,0 +1,30 @@
+name: Comprobar enlaces de los recursos
+
+on:
+  schedule:
+    - cron: "0 6 * * 1" # todos los lunes a las 06:00 UTC
+  workflow_dispatch: {}
+
+jobs:
+  lychee:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Comprobar enlaces en src/_data/recursos
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: >-
+            --no-progress
+            --accept 200,206,301,302,403,429
+            "src/_data/recursos/*.json"
+          fail: false
+
+      - name: Crear issue si hay enlaces rotos
+        uses: peter-evans/create-issue-from-file@v5
+        if: env.lychee_exit_code != 0
+        with:
+          title: Enlaces rotos detectados en los recursos
+          content-filepath: ./lychee/out.md
+          labels: enlaces-rotos

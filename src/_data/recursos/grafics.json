@@ -1,0 +1,35 @@
+{
+  "slug": "grafics",
+  "titulo": "Gráficos e imágenes",
+  "descripcion": "Recursos de logos, iconos, ilustraciones e imágenes.",
+  "grupos": [
+    {
+      "titulo": "Creación de logos",
+      "recursos": [
+        { "titulo": "Logomkr", "descripcion": "Una de las mejores webs de desarrollo de logos gratuita.", "url": "https://logomakr.com/", "imagen": "logomkr.png" },
+        { "titulo": "Kraken", "descripcion": "Planes de precio más que correctos.", "url": "https://kraken.io/", "imagen": "kraken.png" }
+      ]
+    },
+    {
+      "titulo": "Imágenes gratuitas",
+      "recursos": [
+        { "titulo": "Pexels", "descripcion": "Las mejores fotos y vídeos de stock gratis que comparten creadores talentosos.", "url": "https://www.pexels.com/es-es/", "imagen": "pexels.png" },
+        { "titulo": "Unsplash", "descripcion": "La mayor fuente de imágenes de libre uso de Internet.", "url": "https://unsplash.com/", "imagen": "unsplash.png" }
+      ]
+    },
+    {
+      "titulo": "Iconos e ilustraciones",
+      "recursos": [
+        { "titulo": "Undraw", "descripcion": "Navega para encontrar las ilustraciones que se ajusten a tus necesidades. Permite generar imágenes en color a medida.", "url": "https://undraw.co/illustrations", "imagen": "undraw.png" },
+        { "titulo": "manyPixels", "descripcion": "Cada semana, descubre ilustraciones libres para tus proyectos. Uso comercial o no comercial.", "url": "https://www.manypixels.co/gallery/", "imagen": "manypixels.png" },
+        { "titulo": "Lucasz Adam", "descripcion": "Sitio totalmente personalizado con ilustraciones e iconos propios y una interfaz de usuario dinámica.", "url": "https://lukaszadam.com/illustrations", "imagen": "lucaszadam.png" },
+        { "titulo": "365cons", "descripcion": "Un icono diario, a cargo de Amy Devereux.", "url": "https://www.365cons.com/", "imagen": "365cons.png" },
+        { "titulo": "illlustrations", "descripcion": "Kit de ilustraciones de código abierto: 100 ilustraciones para páginas, apps o presentaciones.", "url": "https://illlustrations.co/", "imagen": "illlustrations.png" },
+        { "titulo": "Ira Desing", "descripcion": "Ilustraciones con gradientes y componentes de croquis dibujados a mano.", "url": "https://iradesign.io/", "imagen": "iradesing.png" },
+        { "titulo": "Iconos 8", "descripcion": "Iconos, fotos, vectores, música y software para tu diseño.", "url": "https://icons8.com/", "imagen": "iconos8.png" },
+        { "titulo": "Icon Pharm", "descripcion": "Iconos de código abierto, con color, tamaño y conversión configurables.", "url": "https://iconpharm.com/web-app/", "imagen": "iconpharm.png" },
+        { "titulo": "Box icons", "descripcion": "Iconos de código abierto, con color, tamaño y conversión configurables.", "url": "https://boxicons.com/", "imagen": "boxicons.png" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+backend:
+  name: github
+  repo: correcte12/correcte12.github.io
+  branch: master
+  # URL del Cloudflare Worker que hace de proxy OAuth (ver README-admin.md).
+  # Sustituye este valor por la URL real una vez despliegues el Worker.
+  base_url: https://REEMPLAZA-CON-TU-WORKER.workers.dev
+  auth_endpoint: auth
+
+# Permite probar el panel en local con `npx decap-server` sin necesidad
+# de tener ya desplegado el Worker de login (ver README-admin.md).
+local_backend: true
+
+publish_mode: simple
+media_folder: "img"
+public_folder: "/img"
+
+_definiciones:
+  campos_grupos: &camposGrupos
+    label: "Grupos / subcategorías"
+    name: "grupos"
+    widget: "list"
+    summary: "{{titulo}}"
+    fields:
+      - { label: "Título del grupo", name: "titulo", widget: "string" }
+      - label: "Recursos"
+        name: "recursos"
+        widget: "list"
+        summary: "{{titulo}}"
+        fields:
+          - { label: "Título", name: "titulo", widget: "string" }
+          - { label: "Descripción", name: "descripcion", widget: "text" }
+          - { label: "URL", name: "url", widget: "string" }
+          - { label: "Imagen (nombre de archivo dentro de /img, opcional)", name: "imagen", widget: "string", required: false }
+
+collections:
+  - name: "grafics"
+    label: "Gráficos e imágenes"
+    files:
+      - file: "src/_data/recursos/grafics.json"
+        label: "Gráficos e imágenes"
+        name: "grafics"
+        fields:
+          - { label: "Título de la página", name: "titulo", widget: "string" }
+          - { label: "Descripción de la página", name: "descripcion", widget: "text" }
+          - <<: *camposGrupos
+
+  - name: "themes"
+    label: "Temas"
+    files:
+      - file: "src/_data/recursos/themes.json"
+        label: "Temas"
+        name: "themes"
+        fields:
+          - { label: "Título de la página", name: "titulo", widget: "string" }
+          - { label: "Descripción de la página", name: "descripcion", widget: "text" }
+          - <<: *camposGrupos
+
+  - name: "uml"
+    label: "Diagramas UML"
+    files:
+      - file: "src/_data/recursos/uml.json"
+        label: "Diagramas UML"
+        name: "uml"
+        fields:
+          - { label: "Título de la página", name: "titulo", widget: "string" }
+          - { label: "Descripción de la página", name: "descripcion", widget: "text" }
+          - <<: *camposGrupos
+
+  - name: "gestion-web"
+    label: "Dominios y hosting"
+    files:
+      - file: "src/_data/recursos/gestion-web.json"
+        label: "Dominios y hosting"
+        name: "gestion-web"
+        fields:
+          - { label: "Título de la página", name: "titulo", widget: "string" }
+          - { label: "Descripción de la página", name: "descripcion", widget: "text" }
+          - <<: *camposGrupos
+
+  - name: "seo"
+    label: "SEO"
+    files:
+      - file: "src/_data/recursos/seo.json"
+        label: "SEO"
+        name: "seo"
+        fields:
+          - { label: "Título de la página", name: "titulo", widget: "string" }
+          - { label: "Descripción de la página", name: "descripcion", widget: "text" }
+          - <<: *camposGrupos
+
+  - name: "dev"
+    label: "Desarrollo web"
+    files:
+      - file: "src/_data/recursos/dev.json"
+        label: "Desarrollo web"
+        name: "dev"
+        fields:
+          - { label: "Título de la página", name: "titulo", widget: "string" }
+          - { label: "Descripción de la página", name: "descripcion", widget: "text" }
+          - label: "Enlace personal (opcional)"
+            name: "enlacePersonal"
+            widget: "object"
+            required: false
+            fields:
+              - { label: "Texto", name: "texto", widget: "string" }
+              - { label: "URL", name: "url", widget: "string" }
+          - <<: *camposGrupos

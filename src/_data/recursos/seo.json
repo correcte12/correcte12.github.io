@@ -1,0 +1,27 @@
+{
+  "slug": "seo",
+  "titulo": "SEO",
+  "descripcion": "Recursos SEO recopilados de distintas webs y perfiles.",
+  "grupos": [
+    {
+      "titulo": "Plataformas y agrupaciones para hacer SEO",
+      "recursos": [
+        { "titulo": "Chorri club", "descripcion": "Club para webmasters. Para mí el que mejor gente tiene.", "url": "https://chorri.club/", "imagen": "chorri.png" },
+        { "titulo": "Team Platino", "descripcion": "La plataforma SEO líder en español by CHUISO. Existe la versión rookie, gratuita.", "url": "https://teamplatino.com/", "imagen": "teamplatino.png" },
+        { "titulo": "Romuald Fons", "descripcion": "Presume de ser el mejor SEO; su ruta para conseguir libertad financiera con SEO.", "url": "https://romualdfons.com/", "imagen": "romualdfons.png" },
+        { "titulo": "Josma", "descripcion": "SEO en Zaragoza y buen youtuber con cursos útiles, amante del black SEO.", "url": "https://www.jos.ma/", "imagen": "josma.png" }
+      ]
+    },
+    {
+      "titulo": "Herramientas diversas",
+      "recursos": [
+        { "titulo": "Plagius", "descripcion": "Detector de plagios: analiza documentos en busca de sospecha de plagio.", "url": "https://www.plagius.com/es", "imagen": "plagius.png" },
+        { "titulo": "Cuttly", "descripcion": "Acortador de URL: simplifica tus enlaces, haz seguimiento y adminístralos.", "url": "http://cutt.ly/", "imagen": "cuttly.png" },
+        { "titulo": "Archive.org", "descripcion": "Biblioteca sin ánimo de lucro de millones de libros, películas, software, música y sitios web.", "url": "http://web.archive.org/", "imagen": "archive.png" },
+        { "titulo": "Ubersuggest", "descripcion": "¿Quieres más tráfico? Introduce una palabra clave o dominio para empezar.", "url": "https://neilpatel.com/es/ubersuggest/", "imagen": "ubersuggest.png" },
+        { "titulo": "seoreviewtools", "descripcion": "41 herramientas SEO gratis en tiempo real.", "url": "https://www.seoreviewtools.com/", "imagen": "seoreviewtools.png" },
+        { "titulo": "xml-sitemaps.com", "descripcion": "Generador de sitemap.xml online gratuito, sin registro, para webs de hasta 500 páginas.", "url": "https://www.xml-sitemaps.com/", "imagen": "xml-sitemaps.png" }
+      ]
+    }
+  ]
+}

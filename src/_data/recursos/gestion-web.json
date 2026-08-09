@@ -1,0 +1,22 @@
+{
+  "slug": "gestion-web",
+  "titulo": "Dominios y hosting",
+  "descripcion": "Información sobre dominios, DNS y hosting.",
+  "grupos": [
+    {
+      "titulo": "Registro de dominios baratos y de calidad recomendados",
+      "recursos": [
+        { "titulo": "Piensa solutions", "descripcion": "Filial de Arsys.", "url": "https://www.piensasolutions.com/", "imagen": "piensasolutions.png" },
+        { "titulo": "Ovh", "descripcion": "Buen servidor de dominios baratos y VPS. Admite dominios .top y .blog.", "url": "https://ovh.es/", "imagen": "ovh.png" },
+        { "titulo": "Don dominio", "descripcion": "Otro registrador más que correcto en cuanto a precios.", "url": "https://dondominio.com", "imagen": "dondominio.png" },
+        { "titulo": "Sered", "descripcion": "Especialista en WordPress.", "url": "https://sered.net/", "imagen": "sered.png" }
+      ]
+    },
+    {
+      "titulo": "Hosting económico y recomendado",
+      "recursos": [
+        { "titulo": "Banana hosting", "descripcion": "Hosting SSD siempre rápido.", "url": "https://www.banahosting.com/es/", "imagen": "bananahosting.png" }
+      ]
+    }
+  ]
+}

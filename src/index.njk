@@ -1,0 +1,17 @@
+---
+layout: base.njk
+title: Mis recursos
+description: recursos, web, ayuda, mis recursos
+permalink: /index.html
+---
+<h1>Mis recursos, todos juntos en un solo sitio</h1>
+<p class="lead">Este sitio es una declaración de intenciones para tener todos los recursos que voy recopilando en un sólo sitio.</p>
+
+<div class="home-grid">
+  {% for cat in categoriasList %}
+  <a class="home-card" href="/{{ cat.slug }}.html">
+    <h2>{{ cat.titulo }}</h2>
+    <p>{{ cat.descripcion }}</p>
+  </a>
+  {% endfor %}
+</div>
