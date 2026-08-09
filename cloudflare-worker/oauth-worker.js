@@ -56,13 +56,20 @@ export default {
       const content = { token: tokenData.access_token, provider: "github" };
 
       // Protocolo de postMessage que espera Decap CMS: el popup anuncia
-      // "authorizing:github" y, cuando el opener responde, le envía el token.
+      // "authorizing:github" y, cuando el opener responde con el mismo
+      // mensaje, le envía el token. El filtro por message.data es necesario:
+      // extensiones de Chrome (p. ej. React DevTools) también mandan
+      // postMessage a esta ventana, y sin filtrar se cuelan como si fueran
+      // la respuesta real del opener.
       const html = `<!doctype html>
 <html>
   <body>
     <script>
       (function () {
         function receiveMessage(message) {
+          if (message.data !== "authorizing:github") {
+            return;
+          }
           window.opener.postMessage(
             'authorization:github:success:${JSON.stringify(content)}',
             message.origin
